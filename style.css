@@ -71,6 +71,10 @@ header {
     font-weight: 900
 }
 
+.col #iframe-map {
+    width: 100%;
+}
+
 nav {
     display: flex;
     gap: 18px;
