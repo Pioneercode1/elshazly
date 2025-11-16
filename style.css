@@ -75,6 +75,18 @@ header {
     width: 100%;
 }
 
+#div-powered {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#powered {
+    color: #0d9488;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     gap: 18px;
