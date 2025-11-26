@@ -4,32 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>شركة الشاذلي للنقل والتخليص الجمركي</title>
-
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="icon" type="image/png" sizes="32*32" href="https://i.ibb.co/XxvvyRCJ/elshazly32.png">
     <meta name="description"
-        content="الشاذلي شركة متخصصة في النقل والتخليص الجمركي — احترافية، دقة، والتزام بالمواعيد" />
-
-    <link rel="icon" type="image/png" sizes="72x48" href="./images/icon-pioneercode-72.png">
-
+        content="الشاذلي شركة متخصصة في النقل والتخليص الجمركي | تخليص جميع معاملات وإجراءات خدمات الموانئ المصرية من مكان واحد — احترافية، دقة، والتزام بالمواعيد" />
     <meta property="og:title" content="الشاذلي للنقل والتخليص الجمركي">
     <meta property="og:type" content="El-Shazly Logistics Services website">
-    <meta property="og:image" content="https://i.ibb.co/v47fZcrg/elshazly630.jpg">
+    <meta property="og:image" content="https://i.ibb.co/HT3gJ6p2/elshazly-img-630.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:description"
         content="الشاذلي شركة متخصصة في النقل والتخليص الجمركي — احترافية، دقة، والتزام بالمواعيد">
-    <meta property="og:site_name" content="El-Shazly Logistics Services">
+    <meta property="og:site_name" content="الشاذلي للنقل والتخليص الجمركي | تخليص جميع معاملات وإجراءات خدمات الموانئ المصرية من مكان واحد">
 
+    <title>شركة الشاذلي للنقل والتخليص الجمركي</title>
+        <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
+    <!-- JavaScript -->
+     <script src="./main.js" defer></script>
 
 </head>
 
@@ -267,49 +266,6 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const burger = document.getElementById('burger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        burger.addEventListener('click', () => {
-            mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
-        });
-
-        // Simple testimonials rotator
-        const testimonials = [
-            '"خدمة رائعة وسرعة في التخليص — أنصح بهم بشدة" — شركة الغد',
-            '"تعاون احترافي وأسعار مناسبة مع التزام بالمواعيد" — السيد/ محمد',
-            '"فريق متكامل وتحديثات آنية عن حالة الشحنة" — شركة النيل'
-        ];
-        let tIdx = 0;
-        const box = document.getElementById('testimonialBox');
-        setInterval(() => {
-            tIdx = (tIdx + 1) % testimonials.length;
-            box.style.opacity = 0;
-            setTimeout(() => { box.textContent = testimonials[tIdx]; box.style.opacity = 1 }, 300);
-        }, 4000);
-
-        // Contact form handling (demo only)
-        const form = document.getElementById('contactForm');
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const msgEl = document.getElementById('formMsg');
-            if (!name || !email) {
-                msgEl.textContent = 'الرجاء تعبئة الحقول المطلوبة.';
-                msgEl.style.color = 'crimson';
-                return;
-            }
-            // هنا يمكنك إرسال البيانات إلى API أو إلى بريد إلكتروني
-            msgEl.textContent = 'تم استلام طلبك. سنقوم بالتواصل معك قريبًا.';
-            msgEl.style.color = 'green';
-            form.reset();
-        });
-
-        // Accessibility: close mobile menu on navigation click
-        Array.from(document.querySelectorAll('#mobileMenu a')).forEach(a => a.addEventListener('click', () => { mobileMenu.style.display = 'none' }));
-    </script>
 </body>
 
 </html>
